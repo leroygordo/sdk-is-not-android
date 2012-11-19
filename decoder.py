@@ -1,5 +1,4 @@
 import sys
-import tokenize
 
 def decoder(variables):
   sol = ""
@@ -10,16 +9,20 @@ def decoder(variables):
     sol = sol + str(i)
   print sol
 
-def main():
-  data = sys.argv[1]
-  file = open(data,"r")
-  
+def read_sol_file(filename):
+  file = open(filename,"r")
+
   variables = ""
   for line in file:
     line = line.strip("\n")
     variables = variables + line
   variables = variables.split(" ")[1:]
  
+  return variables
+
+def main():
+  data = sys.argv[1]  
+  variables = read_sol_file(data)  
   decoder(variables)
 
 main()
