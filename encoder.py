@@ -35,7 +35,7 @@ def rest_c(celda):
             salida = salida + str(-((celda*9 + 1) + numero)) + " " + str(-((comparacion*9 + 1) + numero)) + " 0 \\n\\\n"
     return salida + "\""
             
-def agrega_rest(entrada):
+def encoder(entrada):
     n_lines=0
     salida = open('archivo_rest', 'w')
     for i in range(9):
@@ -64,6 +64,3 @@ def agrega_rest(entrada):
     imp.close()
     print "Numero de Restricciones: "
     print n_lines
-
-#agrega_rest(entradaP)
-    

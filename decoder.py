@@ -17,12 +17,7 @@ def read_sol_file(filename):
     line = line.strip("\n")
     variables = variables + line
   variables = variables.split(" ")[1:]
+
+  file.close()
  
   return variables
-
-def main():
-  data = sys.argv[1]  
-  variables = read_sol_file(data)  
-  decoder(variables)
-
-main()
