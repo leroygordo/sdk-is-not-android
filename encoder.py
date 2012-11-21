@@ -6,13 +6,10 @@
 # Juan V. Rosas
 # 07-41502
 # Hancel L. Gonzalez
-# Bla
+# 07-40983
 
 import os
 from constantes import *
-
-entradaP = [['.', '.', '.', '8', '.', '9', '1', '.', '.'], ['.', '.', '1', '5', '.', '.', '6', '3', '.'], ['.', '8', '.', '6', '.', '4', '5', '.', '.'], ['3', '.', '.', '.', '.', '.', '7', '.', '.'], ['.', '7', '.', '.', '.', '2', '.', '9', '4'], ['9', '.', '.', '.', '.', '.', '.', '5', '6'], ['.', '.', '5', '.', '.', '.', '.', '.', '.'], ['.', '.', '7', '.', '.', '.', '9', '2', '.'], ['1', '.', '.', '.', '.', '.', '.', '.', '.']]
-
 
 def rest_a(celda):
     salida = "\""
@@ -62,5 +59,4 @@ def encoder(entrada):
     salida.close()
     os.remove('archivo_rest')
     imp.close()
-    print "Numero de Restricciones: "
-    print n_lines
+    print "Numero de Restricciones: " + str(n_lines)
