@@ -8,7 +8,7 @@ from encoder import *
 from decoder import *
 
 def main():
-    if (len(sys.argv) == 1 or len(sys.argv) >=2):
+    if (len(sys.argv) == 1 or len(sys.argv) >2):
       print "execute: sudoku_solver <sudoku_instances_file>"
       exit(1)
  
@@ -33,7 +33,7 @@ def main():
       encoder(entrada)
      
       start = time.time()
-      subprocess.call(["./minisat/minisat","archivo_rest.cnf","-no-luby","-rinc=1.5","-phase-saving=0","-rnd-freq=0.02","archivo_sol"],stdout=outfd, stderr=errfd)
+      subprocess.call(["./minisat/minisat","archivo_rest.cnf","archivo_sol"],stdout=outfd, stderr=errfd)
       end = time.time()
       time_ = (end - start) + time_
                     
