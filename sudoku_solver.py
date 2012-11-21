@@ -8,7 +8,7 @@ from encoder import *
 from decoder import *
 
 def main():
-    if (len(sys.argv) == 1):
+    if (len(sys.argv) == 1 or len(sys.argv) >=2):
       print "execute: sudoku_solver <sudoku_instances_file>"
       exit(1)
  
