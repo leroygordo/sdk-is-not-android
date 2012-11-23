@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Hecho Por:
+# Isaac López Procopio
+# 07-41120
+# Juan V. Rosas
+# 07-41502
+# Hancel L. Gonzalez
+# 07-40983
+
 import sys
 
 def decoder(variables,file):
